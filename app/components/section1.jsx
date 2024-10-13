@@ -8,7 +8,7 @@ const Section1 = () => {
             <div className="flex flex-col lg:flex-row p-5 justify-between mt-8">
                 {/* This will showcase name and introduction */}
                 <div className="flex flex-col justify-between gap-y-10 ml-0 lg:ml-10">
-                    <h1 className="text-5xl sm:text-7xl lg:text-9xl font-bold">
+                    <h1 className="text-5xl sm:text-7xl lg:text-9xl font-bold animate-gradient pb-2">
                         I'm Archita<br></br> Sugandh.
                     </h1>
                     <p className="text-xl sm:text-3xl lg:text-3xl font-normal">
@@ -19,11 +19,11 @@ const Section1 = () => {
                 {/* This will showcase project sections */}
                 <div className="flex flex-col gap-y-10 mr-5 lg:mr-10 mt-10 lg:mt-0">
                     <p className="text-gray-500 text-xl sm:text-2xl lg:text-3xl font-medium">
-                        SELECTED PROJECTS
+                        COMPLETED PROJECTS
                     </p>
                     {/* Div for all projects */}
                     <div className="flex flex-col gap-y-8">
-                        {["expense tracker", "wtm website", "gizmo innovations", "Project 4", "Project 5"].map((project, index) => (
+                        {["Expense Tracker", "WTM official website", "Gizmo Innovations", "Project 4", "Project 5"].map((project, index) => (
                             <Link key={index} href="/" className="group">
                                 <div className="flex justify-between items-center pb-1 border-b-2 border-gray-300 transition-all duration-300 group-hover:border-black">
                                     <p className="text-xl sm:text-2xl font-medium transition-all duration-300 group-hover:text-black">
@@ -50,6 +50,26 @@ const Section1 = () => {
             </div>
 
             <style jsx>{`
+                .animate-gradient {
+                    background: linear-gradient(90deg, black, #444, #888, black);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: gradient-flow 4s ease infinite;
+                }
+
+                @keyframes gradient-flow {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+
                 .animate-marquee {
                     display: inline-block;
                     animation: marquee 15s linear infinite;

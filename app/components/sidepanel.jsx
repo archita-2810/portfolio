@@ -7,6 +7,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
+import Carousel from "./carousel";
 
 const SidePanel = ({ isOpen, togglePanel }) => {
     const [showText, setShowText] = useState(false);
@@ -50,8 +51,15 @@ const SidePanel = ({ isOpen, togglePanel }) => {
                     {showText && (
                         <div className='flex flex-col gap-y-4'>
                             <div className='transition-opacity duration-700'>
-                                <p className="text-base text-gray-300 animate-fadeInSlideUp delay-[200ms]">
-                                    Hello, I am <span className="text-pastel-pink">Archita Sugandh :)</span><br></br> I am currently pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning from <span className="text-pastel-pink">Ramdeobaba University (RBU)</span>.<br></br> I have a passion for <span className="text-pastel-pink">web development</span>, <span className="text-pastel-pink">problem-solving</span>, and <span className="text-pastel-pink">public speaking</span>. I really enjoy <span className="text-pastel-pink">communicating ideas</span> clearly and effectively, whether it's through <span className="text-pastel-pink">presentations</span> or <span className="text-pastel-pink">debates</span>.
+                                <p id="scroll-text" className="text-base text-gray-300 animate-fadeInSlideUp delay-[200ms]">
+                                    Hello, I am <span className="text-pastel-pink">Archita Sugandh :)</span><br />
+                                    I am currently pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning from
+                                    <span className="text-pastel-pink"> Ramdeobaba University (RBU)</span>.<br />
+                                    I have a passion for <span className="text-pastel-pink">web development</span>,
+                                    <span className="text-pastel-pink"> problem-solving</span>, and
+                                    <span className="text-pastel-pink"> public speaking</span>. I really enjoy
+                                    <span className="text-pastel-pink"> communicating ideas</span> clearly and effectively, whether it's through
+                                    <span className="text-pastel-pink"> presentations</span> or <span className="text-pastel-pink">debates</span>.
                                 </p>
                             </div>
 
@@ -152,6 +160,11 @@ const SidePanel = ({ isOpen, togglePanel }) => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/*carousel */}
+            <div className='p-6 ml-4 mr-4'>
+                <Carousel />
             </div>
         </div>
     );

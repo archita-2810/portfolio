@@ -32,9 +32,9 @@ const Navbar = () => {
 
                 {/* Links for medium and larger screens */}
                 <div className="hidden md:flex gap-8 justify-center items-center">
-                    <p onClick={toggleNavbar} className='text-xl hover:underline'>about</p>
-                    <p onClick={toggleNavbar} className='text-xl hover:underline'>work</p>
-                    <p onClick={toggleNavbar} className='text-xl hover:underline'>contact</p>
+                    <p onClick={toggleNavbar} className='text-xl hover:underline'>About</p>
+                    <p onClick={toggleNavbar} className='text-xl hover:underline'>Work</p>
+                    <p onClick={toggleNavbar} className='text-xl hover:underline'>Contact</p>
                 </div>
 
                 {/* Hamburger menu for smaller screens */}
@@ -48,9 +48,9 @@ const Navbar = () => {
             {/* Dropdown for smaller screens */}
             {isOpen && (
                 <div className='flex flex-col items-center md:hidden mt-2'>
-                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>about</p>
-                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>work</p>
-                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>contact</p>
+                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>About</p>
+                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>Work</p>
+                    <p onClick={toggleNavbar} className='cursor-pointer p-4 hover:underline'>Contact</p>
                 </div>
             )}
 
