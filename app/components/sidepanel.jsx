@@ -76,7 +76,7 @@ const SidePanel = ({ isOpen, togglePanel }) => {
                                     <Link href='https://github.com/archita-2810' target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-gray-800 text-white px-4 py-3 rounded-lg transition duration-300 hover:bg-gray-700">
                                         Github
                                     </Link>
-                                    <Link href='https://leetcode.com/u/Archita112/' target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-yellow-800 text-white px-4 py-3 rounded-lg transition duration-300 hover:bg-yellow-700">
+                                    <Link href='https://leetcode.com' target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-yellow-800 text-white px-4 py-3 rounded-lg transition duration-300 hover:bg-yellow-700">
                                         Leetcode
                                     </Link>
                                     <Link href='https://www.codechef.com/users/archita2810' target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-amber-800 text-white px-4 py-3 rounded-lg transition duration-300 hover:bg-amber-700">
